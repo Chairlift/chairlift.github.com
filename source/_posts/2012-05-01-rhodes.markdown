@@ -1,0 +1,10 @@
+---
+layout: post
+title: "Rhodes"
+date: 2012-05-01 19:07
+comments: true
+categories: 
+---
+###Ruby for mobile phones?
+
+[Rhodes](http://rhomobile.com/products/rhodes/) is an open source Ruby-based framework to rapidly build native apps for all major smartphone operating systems (iPhone, Android, RIM, Windows Mobile and Windows Phone 7). These are true native device applications (NOT mobile web apps) which work with synchronized local data and take advantage of device capabilities such as GPS, PIM contacts and calendar, camera, native mapping, push, barcode, signature capture, Bluetooth and Near Field Communications (NFC).
