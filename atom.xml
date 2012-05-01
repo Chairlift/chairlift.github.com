@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Chairlift Development OctoBlog]]></title>
+  <link href="http://Chairlift.github.com/atom.xml" rel="self"/>
+  <link href="http://Chairlift.github.com/"/>
+  <updated>2012-05-01T17:06:34-04:00</updated>
+  <id>http://Chairlift.github.com/</id>
+  <author>
+    <name><![CDATA[Bent Cardan]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+</feed>
