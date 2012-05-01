@@ -1,0 +1,9 @@
+---
+layout: post
+title: "Welcome"
+date: 2012-05-01 18:18
+comments: true
+categories: News
+Author: Bent Cardan
+---
+Hello Everyone! We hope you enjoy the new Chairlift Development Blog. 
