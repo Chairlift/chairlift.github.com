@@ -4,7 +4,7 @@
   <title><![CDATA[Chairlift Development OctoBlog]]></title>
   <link href="http://Chairlift.github.com/atom.xml" rel="self"/>
   <link href="http://Chairlift.github.com/"/>
-  <updated>2012-05-01T19:08:59-04:00</updated>
+  <updated>2012-05-01T19:10:16-04:00</updated>
   <id>http://Chairlift.github.com/</id>
   <author>
     <name><![CDATA[Chairlift Development LLC]]></name>
@@ -20,7 +20,7 @@
     <id>http://Chairlift.github.com/blog/2012/05/01/rhodes</id>
     <content type="html"><![CDATA[<h3>Ruby for mobile phones?</h3>
 
-<p>(Rhodes)[http://rhomobile.com/products/rhodes/] is an open source Ruby-based framework to rapidly build native apps for all major smartphone operating systems (iPhone, Android, RIM, Windows Mobile and Windows Phone 7). These are true native device applications (NOT mobile web apps) which work with synchronized local data and take advantage of device capabilities such as GPS, PIM contacts and calendar, camera, native mapping, push, barcode, signature capture, Bluetooth and Near Field Communications (NFC).</p>
+<p><a href="http://rhomobile.com/products/rhodes/">Rhodes</a> is an open source Ruby-based framework to rapidly build native apps for all major smartphone operating systems (iPhone, Android, RIM, Windows Mobile and Windows Phone 7). These are true native device applications (NOT mobile web apps) which work with synchronized local data and take advantage of device capabilities such as GPS, PIM contacts and calendar, camera, native mapping, push, barcode, signature capture, Bluetooth and Near Field Communications (NFC).</p>
 ]]></content>
   </entry>
   
