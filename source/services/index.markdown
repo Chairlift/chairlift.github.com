@@ -12,6 +12,8 @@ We begin each project by reviewing existing operating procedures and evaluating 
 
 Committed to excellence in our craft, we are passionate about delivering beautifully-designed, robust solutions and take great pride in maintaining strong, ongoing relationships with our clients.
 
-Chairlift Development is directed by Bent Cardan, lift operator, lead developer and web application architect. Bent has been developing web sites and providing IT robust solutions since the late 90s. He is the author of Chairlift Development Blog and creator of many great websites.
+Chairlift Development is operated by a team of developers and web application architects. Lead creative, Bent Cardan, has been developing web sites and providing robust IT solutions since the 1990s. He is the author of Chairlift Development Blog and creator of many great websites.
 
-Our custom solutions include elegant, powerful, and easy-to-use applications that include e-commerce, content and event management, client and portfolio presentations, and blogs, forums and social networking applications.
+When we collaborate with our clients, our custom solutions are elegant, powerful, and easy-to-use applications that include e-commerce, content and event management, client and portfolio presentations, and blogs, forums and social networking applications.
+
+Email the <a href="mailto:liftoperator@chairliftdevelopment.com">liftoperator@chairliftdevelopment.com</a> and find out how we can get your project turning heads!
