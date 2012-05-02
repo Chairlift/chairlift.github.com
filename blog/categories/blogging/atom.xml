@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Chairlift Development OctoBlog]]></title>
-  <link href="http://Chairlift.github.com/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Blogging | Chairlift Development OctoBlog]]></title>
+  <link href="http://Chairlift.github.com/blog/categories/blogging/atom.xml" rel="self"/>
   <link href="http://Chairlift.github.com/"/>
   <updated>2012-05-02T15:04:04-04:00</updated>
   <id>http://Chairlift.github.com/</id>
@@ -25,26 +25,6 @@
 <p>If you’re serious about your blog, you need a desktop blog editor. If you’re lucky enough to have a Mac, nothing is more powerful or more elegant than <a href="http://www.red-sweater.com/marsedit/">MarsEdit 3</a>.</p>
 
 <p>Go check out Red-Sweater’s <a href="http://www.red-sweater.com/marsedit/">MarsEdit 3</a>.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Rhodes]]></title>
-    <link href="http://Chairlift.github.com/blog/2012/05/01/rhodes/"/>
-    <updated>2012-05-01T19:07:00-04:00</updated>
-    <id>http://Chairlift.github.com/blog/2012/05/01/rhodes</id>
-    <content type="html"><![CDATA[<h3>Ruby for mobile phones?</h3>
-
-<p><a href="http://rhomobile.com/products/rhodes/">Rhodes</a> is an open source Ruby-based framework to rapidly build native apps for all major smartphone operating systems (iPhone, Android, RIM, Windows Mobile and Windows Phone 7). These are true native device applications (NOT mobile web apps) which work with synchronized local data and take advantage of device capabilities such as GPS, PIM contacts and calendar, camera, native mapping, push, barcode, signature capture, Bluetooth and Near Field Communications (NFC).</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Welcome]]></title>
-    <link href="http://Chairlift.github.com/blog/2012/05/01/welcome/"/>
-    <updated>2012-05-01T18:18:00-04:00</updated>
-    <id>http://Chairlift.github.com/blog/2012/05/01/welcome</id>
-    <content type="html"><![CDATA[<p>Hello Everyone! We hope you enjoy the new Chairlift Development Blog.</p>
 ]]></content>
   </entry>
   
