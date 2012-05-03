@@ -152,7 +152,7 @@ http
 }</code></pre></noscript></div>
 
 
-<p>When we host multiple PHP sites, we use this type of conf file in the Nginx sites-available directory, symbolically linked to from sites-enabled as follows:</p>
+<p>When we host many PHP sites, we use this type of conf file in the sites-available directory, symbolically linked to from sites-enabled as follows:</p>
 
 <div><script src='https://gist.github.com/2582593.js?file='></script>
 <noscript><pre><code>server
@@ -231,7 +231,7 @@ server
 }</code></pre></noscript></div>
 
 
-
+<p>As you can see we&#8217;ve placed two server blocks in the conf file. One handles http requests on port 80. For secure request processing over https on port 443, the second server block is using SSL certificates.</p>
 
   
     <footer>
