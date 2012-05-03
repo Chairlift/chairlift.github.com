@@ -9,7 +9,7 @@
   <meta name="author" content="Chairlift Development LLC">
 
   
-  <meta name="description" content="Code Archives May 2nd, 2012 How to configure Nginx for PHP and Ruby on Rails Setting up Nginx can be difficult. Here&#8217;s a basic configuration &hellip;">
+  <meta name="description" content="Code Archives May 2nd, 2012 How to configure Nginx for PHP and Ruby on Rails Setting up Nginx can be tough. Here&#8217;s a basic configuration file &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -87,7 +87,7 @@
   
   <h2>How to configure Nginx for PHP and Ruby on Rails</h2>
 
-<p>Setting up Nginx can be difficult.  Here&#8217;s a basic configuration file found in the /etc/nginx directory.</p>
+<p>Setting up Nginx can be tough.  Here&#8217;s a basic configuration file found in the /etc/nginx directory.</p>
 
 <div><script src='https://gist.github.com/2582765.js?file='></script>
 <noscript><pre><code>
@@ -231,9 +231,9 @@ server
 }</code></pre></noscript></div>
 
 
-<p>We set two server blocks up there in that conf file. The former handles http requests on port 80. For secure request processing over https on port 443, the second server block is using SSL certs.</p>
+<p>We set two server blocks. The first handles http browser requests on port 80. For secure request processing over https on port 443, the second server block is using SSL certs.</p>
 
-<p>We&#8217;ll be updating next on how to position the same nginx server that is handling PHP to also handle Ruby on Rails web applications with upstream blocks processed by Unicorn.</p>
+<p>Next we&#8217;ll talk about how to position the same PHP handling Nginx server to handle Ruby on Rails web applications with upstream blocks processed by <a href="http://unicorn.bogomips.org/">Unicorn</a> or <a href="http://code.macournoyer.com/thin/">Thin</a>.</p>
 
   
     <footer>
