@@ -16,4 +16,4 @@ Chairlift Development is operated by a team of developers and web application ar
 
 When we collaborate with our clients, our custom solutions are elegant, powerful, and easy-to-use applications that include e-commerce, content and event management, client and portfolio presentations, and blogs, forums and social networking applications.
 
-Email the <a href="mailto:liftoperator@chairliftdevelopment.com">liftoperator@chairliftdevelopment.com</a> and find out how we can get your project turning heads!
+Email <a href="mailto:liftoperator@chairliftdevelopment.com">liftoperator@chairliftdevelopment.com</a> and get your project turning heads!
