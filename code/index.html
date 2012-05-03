@@ -123,7 +123,7 @@ http
 </code></pre></noscript></div>
 
 
-<p>By combining PHP-FPM and Nginx we get a robust php processor for rapid page loading across complex and multifaceted PHP web applications. It&#8217;s worth mentioning that the following configuration leverages the unix socket for php-fpm processing, which is preferred over TCP sockets.</p>
+<p>By combining PHP-FPM and Nginx we get a robust php processor for rapid page loading across complex and multifaceted PHP web applications. It&#8217;s worth mentioning that the following configuration leverages the unix socket for php-fpm processing, preferred over TCP sockets.</p>
 
 <div><script src='https://gist.github.com/2582278.js?file='></script>
 <noscript><pre><code>location ~ \.php {
@@ -231,9 +231,9 @@ server
 }</code></pre></noscript></div>
 
 
-<p>As you can see we&#8217;ve placed two server blocks in the conf file. One handles http requests on port 80. For secure request processing over https on port 443, the second server block is using SSL certificates.</p>
+<p>We set two server blocks up there in that conf file. The former handles http requests on port 80. For secure request processing over https on port 443, the second server block is using SSL certificates.</p>
 
-<p>We&#8217;ll be updating this page shortly with our suggestions on how to position the same nginx server that handles PHP to also handle Ruby on Rails web applications.</p>
+<p>We&#8217;ll be updating this page shortly with our suggestions on how to position the same nginx server that is handling PHP to also handle Ruby on Rails web applications with upstream blocks processed by Unicorn.</p>
 
   
     <footer>
