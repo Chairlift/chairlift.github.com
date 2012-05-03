@@ -9,7 +9,7 @@
   <meta name="author" content="Chairlift Development LLC">
 
   
-  <meta name="description" content="Code Archives May 2nd, 2012 Welcome to the Code Archives Setting up Nginx can be difficult. Here&#8217;s some of our server configuration files. &hellip;">
+  <meta name="description" content="Code Archives May 2nd, 2012 Welcome to the Code Archives Setting up Nginx can be difficult. Here&#8217;s a basic configuration file found in the / &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -87,7 +87,72 @@
   
   <h2>Welcome to the Code Archives</h2>
 
-<p>Setting up Nginx can be difficult.  Here&#8217;s some of our server configuration files.</p>
+<p>Setting up Nginx can be difficult.  Here&#8217;s a basic configuration file found in the /etc/nginx directory.</p>
+
+<div><script src='https://gist.github.com/2582765.js?file='></script>
+<noscript><pre><code>
+worker_processes 4;
+
+events
+{
+    worker_connections 1024;
+}
+http
+{
+    include             mime.types;
+    default_type        application/octet-stream;
+
+    server_names_hash_max_size       4096;
+    server_names_hash_bucket_size    4096;      
+
+    #proxy settings (only relevant when nginx used as a proxy)
+    proxy_set_header Host $host;
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    proxy_set_header X-Real-IP $remote_addr;
+
+
+    keepalive_timeout   65;
+    sendfile            on;
+    gzip                    on;
+    ssi                                 on;
+    #tcp_nopush         on;
+
+    
+    include /etc/nginx/sites-enabled/*;
+}
+</code></pre></noscript></div>
+
+
+<p>By combining PHP-FPM and Nginx we get a robust php processor for rapid page loading across complex and multifaceted PHP web applications. It&#8217;s worth mentioning that the following configuration leverages the unix socket for php-fpm processing, which is preferred over TCP sockets.</p>
+
+<div><script src='https://gist.github.com/2582278.js?file='></script>
+<noscript><pre><code>location ~ \.php {
+        fastcgi_param  QUERY_STRING       $query_string;
+        fastcgi_param  REQUEST_METHOD     $request_method;
+        fastcgi_param  CONTENT_TYPE       $content_type;
+        fastcgi_param  CONTENT_LENGTH     $content_length;
+ 
+        fastcgi_param  SCRIPT_NAME        $fastcgi_script_name;
+        fastcgi_param  SCRIPT_FILENAME    $document_root$fastcgi_script_name;
+        fastcgi_param  REQUEST_URI        $request_uri;
+        fastcgi_param  DOCUMENT_URI       $document_uri;
+        fastcgi_param  DOCUMENT_ROOT      $document_root;
+        fastcgi_param  SERVER_PROTOCOL    $server_protocol;
+ 
+        fastcgi_param  GATEWAY_INTERFACE  CGI/1.1;
+        fastcgi_param  SERVER_SOFTWARE    nginx;
+ 
+        fastcgi_param  REMOTE_ADDR        $remote_addr;
+        fastcgi_param  REMOTE_PORT        $remote_port;
+        fastcgi_param  SERVER_ADDR        $server_addr;
+        fastcgi_param  SERVER_PORT        $server_port;
+        fastcgi_param  SERVER_NAME        $server_name;
+ 
+        fastcgi_pass   unix:/var/run/php-fpm.sock ;
+}</code></pre></noscript></div>
+
+
+<p>When we host multiple PHP sites, we use this type of conf file in the Nginx sites-available directory, symbolically linked to from sites-enabled as follows:</p>
 
 <div><script src='https://gist.github.com/2582593.js?file='></script>
 <noscript><pre><code>server
@@ -163,35 +228,6 @@ server
         include        /etc/nginx/php.conf;
     }
 
-}</code></pre></noscript></div>
-
-
-
-
-<div><script src='https://gist.github.com/2582278.js?file='></script>
-<noscript><pre><code>location ~ \.php {
-        fastcgi_param  QUERY_STRING       $query_string;
-        fastcgi_param  REQUEST_METHOD     $request_method;
-        fastcgi_param  CONTENT_TYPE       $content_type;
-        fastcgi_param  CONTENT_LENGTH     $content_length;
- 
-        fastcgi_param  SCRIPT_NAME        $fastcgi_script_name;
-        fastcgi_param  SCRIPT_FILENAME    $document_root$fastcgi_script_name;
-        fastcgi_param  REQUEST_URI        $request_uri;
-        fastcgi_param  DOCUMENT_URI       $document_uri;
-        fastcgi_param  DOCUMENT_ROOT      $document_root;
-        fastcgi_param  SERVER_PROTOCOL    $server_protocol;
- 
-        fastcgi_param  GATEWAY_INTERFACE  CGI/1.1;
-        fastcgi_param  SERVER_SOFTWARE    nginx;
- 
-        fastcgi_param  REMOTE_ADDR        $remote_addr;
-        fastcgi_param  REMOTE_PORT        $remote_port;
-        fastcgi_param  SERVER_ADDR        $server_addr;
-        fastcgi_param  SERVER_PORT        $server_port;
-        fastcgi_param  SERVER_NAME        $server_name;
- 
-        fastcgi_pass   unix:/var/run/php-fpm.sock ;
 }</code></pre></noscript></div>
 
 
